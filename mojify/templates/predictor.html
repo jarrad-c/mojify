@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  <title>Mojify</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="static/vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="static/css/util.css">
+  <link rel="stylesheet" type="text/css" href="static/css/main.css">
+<!--===============================================================================================-->
+</head>
+
+<body>
+
+  <div id="example1" class="limiter">
+    <div class="container-table100">
+      <div class="wrap-table100">
+        <div class="table100">
+{#          <div style="max-width:25%; margin-left: auto; margin-right: auto;">#}
+{#            <center>#}
+{#              <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Twitch_logo.svg" alt="Twitch Logo">#}
+{#            </center>#}
+{#          </div>#}
+
+  <form method="post" action="/" enctype=multipart/form-data>
+    <div style="text-align: center;">
+      <br>
+        <h1>mojify</h1>
+        <br>
+        Upload a picture to get your customized bitmoji:
+        <br>
+        <br>
+        <div class="form-group" align="center">
+            <label for="fileUpload">Example file input</label>
+            <input type="file" class="form-control-file" name="file" id="fileUpload">
+         </div>
+    <br>
+    <!-- Submit button -->
+    <input class="btn btn-primary" type="submit" value="Submit">
+    <br>
+    </div>
+
+  </form>
+    </div>
+
+      <div class="row">
+        <div class="col-md-6">
+            <img class="center-block" src="{{ uploaded_photo }}" style='height: 100%; width: 100%; object-fit: contain'>
+        </div>
+        <div class="col-md-6">
+            <img class="center-block" src="{{prediction}}">
+        </div>
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!--===============================================================================================-->
+  <script src="static/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+  <script src="static/vendor/bootstrap/js/popper.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+  <script src="static/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+  <script src="static/js/main.js"></script>
+
+</body>
+</html>
