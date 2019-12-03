@@ -20,6 +20,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$USER_HOME$/2019-2020/Image Processing/mojify" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -188,14 +193,25 @@
       <option name="presentableId" value="Default" />
       <updated>1575221945617</updated>
       <workItem from="1575221955188" duration="16828000" />
-      <workItem from="1575328168731" duration="461000" />
+      <workItem from="1575328168731" duration="5124000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/2019-2020/Image Processing/mojify/mojify/predictor_api.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Harassment_Classifier_App_master$Harassment_Classifier_App_master.coverage" NAME="mojify Coverage Results" MODIFIED="1575328698877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/2019-2020/Image Processing/mojify/mojify" />
+    <SUITE FILE_PATH="coverage/Harassment_Classifier_App_master$Harassment_Classifier_App_master.coverage" NAME="mojify Coverage Results" MODIFIED="1575333313847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/2019-2020/Image Processing/mojify/mojify" />
   </component>
 </project>

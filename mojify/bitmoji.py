@@ -23,9 +23,10 @@ def buildPreviewUrl(traits):
 def createFromFeatures(features):
     traits = {}
     for feature in features:
-        key = FEATURES[feature]['trait']
-        value = FEATURES[feature]['value']
-        traits[key] = value
+        if (feature in FEATURES.keys()) and (feature != 'Sideburns'):
+            key = FEATURES[feature]['trait']
+            value = FEATURES[feature]['value']
+            traits[key] = value
 
     if 'Male' not in features:
         traits['gender'] = 2
@@ -57,23 +58,12 @@ def createFromFeatures(features):
             traits['beard'] = 1343
         else:
             traits['beard'] = 2321
+    elif('Goatee' in features) and ('Sideburns' in features):
+        traits['beard'] = 1343
     elif ('Mustache' in features) and ('5_o_clock_shadow' in features):
         traits['beard'] = 2253
 
-    return buildPreviewUrl(traits)
+    if('Sideburns' in features) and ('beard' not in traits.keys()):
+        traits['beard'] = FEATURES['Sideburns']
 
-#
-# def testBitmoji():
-#     features = ['Gray_Hair',
-#                 'Eyeglasses',
-#                 'No_Beard',
-#                 'Bushy_Eyebrows',
-#                 'Bags_Under_Eyes',
-#                 'Wearing_Lipstick',
-#                 'Big_Lips',
-#                 'Double_Chin',
-#                 'Chubby',
-#                 'Narrow_Eyes',
-#                 'Pale_Skin']
-#     traits = createFromFeatures(features)
-#     return buildPreviewUrl(traits=traits)
+    return buildPreviewUrl(traits)
