@@ -1,10 +1,7 @@
 from fastai.vision import *
-from skimage import io
 import cv2
 from bitmoji import createFromFeatures
 import imutils
-import pickle
-
 MODEL_PATH = './static/models/'
 
 

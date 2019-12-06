@@ -1,6 +1,6 @@
 FEATURES = {
     'Male': {'trait': 'gender', 'value': 1},
-    'Black_Hair': {'trait': 'hair', 'value': 2039326},
+    'Black_Hair': {'trait': 'hair_tone', 'value': 2039326},
     'Blond_Hair':	{'trait': 'hair_tone', 'value': 15714429},
     'Brown_Hair': {'trait': 'hair_tone', 'value': 6632737},
     'Gray_Hair': {'trait': 'hair_tone', 'value': 9734786},
